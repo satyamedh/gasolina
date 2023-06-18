@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ferrari</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .image {
+      flex: 1;
+      margin-right: 20px;
+    }
+
+    .image img {
+      width: 100%;
+      height: auto;
+    }
+
+    .details {
+      flex: 1;
+    }
+
+    .details h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .details p {
+      margin-bottom: 10px;
+    }
+
+    .details ul {
+      list-style-position: inside;
+      margin-left: 20px;
+    }
+
+    .financing-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 10px;
+    }
+
+    .financing-table th,
+    .financing-table td {
+      padding: 8px;
+      border: 1px solid #ffffff;
+    }
+
+    .financing-table th {
+      background-color: #1e1e1e;
+      color: #ffffff;
+    }
+
+    .financing-table td {
+      text-align: center;
+    }
+
+    .contact-button {
+      background-color: #1e90ff;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .contact-button:hover {
+      background-color: #ffffff;
+      color: #1e90ff;
+    }
+  </style>
+</head>
+<body>
+<div class="navbar">
+  <div class="hover-underline-animation" style="margin-left: 46.5%;">
+    <h1 class="logo centered-text" onclick="window.location.href = '/';">GASOLINA</h1>
+  </div>
+</div>
+<nav role="navigation">
+  <div class="">
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span></span>
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="/"><li class="first-menu-option">Home</li></a>
+        <a href="/models.html"><li class="menu-option">Products</li></a>
+        <a href="/about.html"><li class="menu-option">About</li></a>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="image">
+    <img src="ferrari.jpg" alt="Ferrari">
+  </div>
+
+  <div class="details">
+    <h2>Ferrari</h2>
+    <p>The Ferrari is a high-performance sports car known for its speed and elegance. It features a powerful engine, aerodynamic design, and advanced technology.</p>
+    <p>Key Features:</p>
+    <ul style="text-align: left">
+      <li>Top speed: 200 mph</li>
+      <li>0-60 mph acceleration: 3 seconds</li>
+      <li>Engine: V8</li>
+      <li>Horsepower: 600 HP</li>
+      <li>Price: $250,000</li>
+    </ul>
+
+    <table class="financing-table">
+      <thead>
+      <tr>
+        <th>Financing Option</th>
+        <th>Interest Rate</th>
+        <th>Loan Term</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Option 1</td>
+        <td>2.5%</td>
+        <td>60 months</td>
+      </tr>
+      <tr>
+        <td>Option 2</td>
+        <td>3%</td>
+        <td>48 months</td>
+      </tr>
+      <tr>
+        <td>Option 3</td>
+        <td>3.5%</td>
+        <td>36 months</td>
+      </tr>
+      </tbody>
+    </table>
+
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="contact-button">Contact</a>
+  </div>
+</div>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
