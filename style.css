@@ -309,3 +309,17 @@ html, body {
   background-color: #833ab4;
   border-color: #833ab4;
 }
+
+.card:hover, .car-img:not(:hover){
+  transform: scale(1.1);
+  transition-duration: 0.5s;
+}
+
+.card:not(:hover), .car-img:not(:hover){
+  transform: scale(1);
+  transition-duration: 0.5s;
+}
+
+.car-img{
+  transition-duration: 0.5s;
+}
