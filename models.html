@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/gasolina/style.css">
+    <title>Models</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             background-color: black;
@@ -22,6 +22,11 @@
         .card-img-top {
             height: 200px;
             object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .card-img-top:hover {
+            transform: scale(1.1);
         }
 
         .list-group-item {
@@ -44,6 +49,22 @@
             text-decoration: underline;
             text-decoration-color: deepskyblue;
             text-decoration-skip-ink: none;
+        }
+
+        .btn-youtube {
+            color: #ff0000;
+            border-color: #ff0000;
+        }
+
+        .btn-twitter {
+            color: #1da1f2;
+            border-color: #1da1f2;
+        }
+
+        .btn-instagram {
+            color: #e4405f;
+            border-color: #e4405f;
+            background-color: transparent;
         }
     </style>
 </head>
@@ -95,7 +116,7 @@
                         <ul class="list-group">
                             <li class="list-group-item">Amazing Engine and High Performance</li>
                             <li class="list-group-item">Iconic Design</li>
-                            <li class="list-group-item">Cutting edge technology</li>
+                            <li class="list-group-item">Cutting-edge Technology</li>
                         </ul>
                         <a href="/gasolina/lambo.html" class="btn btn-primary">More Details</a>
                     </div>
@@ -119,8 +140,11 @@
     </div>
 </div>
 
-
-<!-- Other content on the page -->
+<div style="text-align: center; margin-top: 20px;">
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-youtube btn-outline-primary">YouTube</a>
+    <a href="https://www.twitter.com" class="btn btn-twitter btn-outline-primary">Twitter</a>
+    <a href="https://www.instagram.com" class="btn btn-instagram btn-outline-primary">Instagram</a>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
